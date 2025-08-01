@@ -15,6 +15,10 @@
 #define RAISE 2
 #define ADJUST 3
 
+&1 {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;  // use D0 (008) for CS niceview + rgb
+};
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
